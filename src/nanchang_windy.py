@@ -77,7 +77,7 @@ def get_day_winds():
     dates: list[dict] = read_json_as_day_winds_dict()
 
     start: datetime = datetime.datetime.strptime('20110101', '%Y%m%d')
-    end: datetime = datetime.datetime.now()
+    end: datetime = datetime.datetime.strptime('20230515', '%Y%m%d')
     day_winds: list[DayWind] = []
     start += datetime.timedelta(days=len(dates))
     for date in dates:
