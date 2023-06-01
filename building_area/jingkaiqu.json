@@ -1,78 +1,192 @@
 [
   {
     "name": "电建·产控 洺悦府",
-    "price": "11800"
+    "price": "11800",
+    "img_url": "https:https://loupanwl.soufunimg.com/viewimage/jpg/all/oaapp-ios/2023-05-28/8742a8cc-b3f1-45bb-8c62-457d49ef8b55/0/168x112.jpg?t=1",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310202896.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 639082"
+    ]
   },
   {
     "name": "招商金茂正荣依云上城",
-    "price": "10500"
+    "price": "10500",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310200644.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 618764"
+    ]
   },
   {
     "name": "金茂南昌国际社区",
-    "price": "7500"
+    "price": "7500",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310202112.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 628523"
+    ]
   },
   {
     "name": "绿都东澜府",
-    "price": "12000"
+    "price": "12000",
+    "img_url": "https://imgwcs2.soufunimg.com/viewimage/house/2021_03/26/4b4c9e0b-a4c0-4708-8e1c-923af254a676/168x112.jpg?t=1",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310200568.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 619494"
+    ]
   },
   {
     "name": "万科四季都会",
-    "price": "11300"
+    "price": "11300",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310202036.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 627849"
+    ]
   },
   {
     "name": "中海左岸国际",
-    "price": "19500"
+    "price": "19500",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310202852.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 637562"
+    ]
   },
   {
     "name": "中海寰宇天下",
-    "price": "9500"
+    "price": "9500",
+    "img_url": "https://img11.soufunimg.com/viewimage/house/2018_08/27/M02/0F/16/ChCE4FuDXoCIFF9fAAFSE2f-DJgABFIGgK2LcsAAVIr740/168x112.jpg?t=1",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310199644.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 840598"
+    ]
   },
   {
     "name": "江铃龙湖·云璟",
-    "price": "12700"
+    "price": "12700",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310202172.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 631119"
+    ]
   },
   {
     "name": "力高国资尚郡",
-    "price": "10000"
+    "price": "10000",
+    "img_url": "https://imgwcs2.soufunimg.com/viewimage/house/2022_03/25/075db7bb-63f0-4e50-8fe8-fd926964ecd8/168x112.jpg?t=1",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310202004.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 627085"
+    ]
   },
   {
     "name": "华侨城万科世纪水岸",
-    "price": "25000"
+    "price": "25000",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310199912.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 607589"
+    ]
   },
   {
     "name": "富力华庭",
-    "price": "18000"
+    "price": "18000",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310199940.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 867050"
+    ]
   },
   {
     "name": "力高雍湖国际",
-    "price": "7200"
+    "price": "7200",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310200242.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 802817"
+    ]
   },
   {
     "name": "华润青山湖万象汇",
-    "price": "8800"
+    "price": "8800",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310200054.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 898980"
+    ]
   },
   {
     "name": "保利和光",
-    "price": "13500"
+    "price": "13500",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310200090.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 882669"
+    ]
   },
   {
     "name": "市政绿城桂语江南",
-    "price": "9500"
+    "price": "9500",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310200112.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 884132"
+    ]
   },
   {
     "name": "名城紫金轩",
-    "price": "18500"
+    "price": "18500",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310200092.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 882397"
+    ]
   },
   {
     "name": "众森·红谷一品",
-    "price": "16000"
+    "price": "16000",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310334828.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 660195"
+    ]
   },
   {
     "name": "美的新力公园天下",
-    "price": "11500"
+    "price": "11500",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310200264.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 816756"
+    ]
   },
   {
     "name": "绿地卢塞恩小镇",
-    "price": "15000"
+    "price": "15000",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2311133862.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 800955"
+    ]
   }
 ]
