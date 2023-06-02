@@ -1,5 +1,5 @@
 '''
-Nanchang real estate
+get_building_areas.py
 '''
 
 import os
