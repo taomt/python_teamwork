@@ -8,8 +8,8 @@
       "400-176-0760 ",
       " 607589"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "名城紫金轩",
@@ -20,8 +20,8 @@
       "400-176-0760 ",
       " 882397"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "中粮·建发·祥云悦府",
@@ -32,8 +32,17 @@
       "400-176-0760 ",
       " 621092"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
+  },
+  {
+    "name": "建发缦云",
+    "price": "20000",
+    "img_url": "https:https://cihcdn.soufunimg.com/apc/viewImg/b6bf9e8cb4f849a9a007f5c26ccbf625/750",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310202710.htm#detail_map",
+    "phone": [],
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "联发悦禧府",
@@ -44,17 +53,8 @@
       "400-176-0760 ",
       " 632376"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
-  },
-  {
-    "name": "建发缦云",
-    "price": "20000",
-    "img_url": "https:https://cihcdn.soufunimg.com/apc/viewImg/b6bf9e8cb4f849a9a007f5c26ccbf625/750",
-    "map_url": "https://nc.newhouse.fang.com/loupan/2310202710.htm#detail_map",
-    "phone": [],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "建发养云",
@@ -65,8 +65,8 @@
       "400-176-0760 ",
       " 633882"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "江投朝阳春天",
@@ -77,32 +77,8 @@
       "400-176-0760 ",
       " 634439"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
-  },
-  {
-    "name": "鸥鹏湾",
-    "price": "15000",
-    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
-    "map_url": "https://nc.newhouse.fang.com/loupan/2310201040.htm#detail_map",
-    "phone": [
-      "400-176-0760 ",
-      " 622042"
-    ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
-  },
-  {
-    "name": "绿地朝阳中心",
-    "price": "8500",
-    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
-    "map_url": "https://nc.newhouse.fang.com/loupan/2310199390.htm#detail_map",
-    "phone": [
-      "400-176-0760 ",
-      " 834248"
-    ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "建发中粮朝阳九里",
@@ -113,8 +89,32 @@
       "400-176-0760 ",
       " 633135"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
+  },
+  {
+    "name": "鸥鹏湾",
+    "price": "15000",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310201040.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 622042"
+    ],
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
+  },
+  {
+    "name": "绿地朝阳中心",
+    "price": "8500",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310199390.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 834248"
+    ],
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "江岸嘉院",
@@ -125,8 +125,8 @@
       "400-176-0760 ",
       " 628715"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "硕丰西湖里",
@@ -137,8 +137,8 @@
       "400-176-0760 ",
       " 869148"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "绿地象南中心",
@@ -149,8 +149,8 @@
       "400-176-0760 ",
       " 838529"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "年代星辰商业广场",
@@ -161,7 +161,7 @@
       "400-176-0760 ",
       " 625790"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   }
 ]

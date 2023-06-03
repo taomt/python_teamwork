@@ -91,7 +91,7 @@ def get_position_by(map_url: str) -> tuple[str, str]:
     根据 `map_url` 获取经纬度，例：
     ``` python
     lat, lon = get_position_by('https://nc.newhouse.fang.com/loupan/2310201034.htm#detail_map')
-    print(lat, lon) # 115.8583358 28.6836542
+    print(lat, lon) # 28.6836542 115.8583358
     ```
     '''
     print(f'> 正在获取 {map_url}')
@@ -103,7 +103,7 @@ def get_position_by(map_url: str) -> tuple[str, str]:
     res: str = requests.get(f'https:{iframe_url}', timeout=None).text
     script: etree._Element = etree.HTML(res).xpath('/html/body/script[4]')[0]
     reg = re.compile(r'_vars.cityx = "(.*)";[\s\S]*_vars.cityy = "(.*)"')
-    latitude, longitude = reg.findall(script.text)[0]
+    longitude, latitude = reg.findall(script.text)[0]
     return latitude, longitude
 
 

@@ -8,8 +8,8 @@
       "400-176-0760 ",
       " 619494"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "万科四季都会",
@@ -20,8 +20,8 @@
       "400-176-0760 ",
       " 627849"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "江铃龙湖·云璟",
@@ -32,8 +32,8 @@
       "400-176-0760 ",
       " 631119"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "保利和光",
@@ -44,8 +44,8 @@
       "400-176-0760 ",
       " 882669"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "美的新力公园天下",
@@ -56,8 +56,8 @@
       "400-176-0760 ",
       " 816756"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "新力尊园",
@@ -68,8 +68,8 @@
       "400-176-0760 ",
       " 853095"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "江铃祥云瑞园",
@@ -80,8 +80,8 @@
       "400-176-0760 ",
       " 637069"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "南昌保利天汇",
@@ -92,8 +92,8 @@
       "400-176-0760 ",
       " 619059"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "江铃新力臻园",
@@ -104,20 +104,8 @@
       "400-176-0760 ",
       " 883788"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
-  },
-  {
-    "name": "保利锦悦",
-    "price": "10500",
-    "img_url": "https://imgwcs2.soufunimg.com/viewimage/house/2021_11/22/4cf540c0-ccfd-48a6-85e8-2c2157c5a815/168x112.jpg?t=1",
-    "map_url": "https://nc.newhouse.fang.com/loupan/2310200384.htm#detail_map",
-    "phone": [
-      "400-176-0760 ",
-      " 628370"
-    ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "保利大都汇",
@@ -128,8 +116,20 @@
       "400-176-0760 ",
       " 616365"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
+  },
+  {
+    "name": "保利锦悦",
+    "price": "10500",
+    "img_url": "https://imgwcs2.soufunimg.com/viewimage/house/2021_11/22/4cf540c0-ccfd-48a6-85e8-2c2157c5a815/168x112.jpg?t=1",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310200384.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 628370"
+    ],
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "保利和光·宸悦",
@@ -140,8 +140,8 @@
       "400-176-0760 ",
       " 633729"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "中大汇",
@@ -152,8 +152,8 @@
       "400-176-0760 ",
       " 729592"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "正荣青云宸院",
@@ -164,8 +164,8 @@
       "400-176-0760 ",
       " 618144"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "世茂云翰",
@@ -176,8 +176,8 @@
       "400-176-0760 ",
       " 628153"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "青云公馆",
@@ -188,8 +188,8 @@
       "400-176-0760 ",
       " 711471"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "保利中航城云锦",
@@ -200,8 +200,8 @@
       "400-176-0760 ",
       " 604569"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "保利熙悦",
@@ -212,20 +212,8 @@
       "400-176-0760 ",
       " 613970"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
-  },
-  {
-    "name": "谱洋府",
-    "price": "14200",
-    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
-    "map_url": "https://nc.newhouse.fang.com/loupan/2310200530.htm#detail_map",
-    "phone": [
-      "400-176-0760 ",
-      " 605516"
-    ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "保利美的云筑",
@@ -236,20 +224,20 @@
       "400-176-0760 ",
       " 722359"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
-    "name": "南水·新力新园",
-    "price": "15000",
+    "name": "谱洋府",
+    "price": "14200",
     "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
-    "map_url": "https://nc.newhouse.fang.com/loupan/2310200506.htm#detail_map",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310200530.htm#detail_map",
     "phone": [
       "400-176-0760 ",
-      " 738972"
+      " 605516"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "海伦堡弘阳时光玖悦",
@@ -260,7 +248,19 @@
       "400-176-0760 ",
       " 615166"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
+  },
+  {
+    "name": "南水·新力新园",
+    "price": "15000",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310200506.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 738972"
+    ],
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   }
 ]

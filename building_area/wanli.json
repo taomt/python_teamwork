@@ -8,8 +8,8 @@
       "400-176-0760 ",
       " 839829"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "保利·幸福里",
@@ -20,8 +20,8 @@
       "400-176-0760 ",
       " 883743"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "上海建工海玥名邸",
@@ -32,8 +32,8 @@
       "400-176-0760 ",
       " 841575"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "万科星光世纪",
@@ -44,20 +44,8 @@
       "400-176-0760 ",
       " 606238"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
-  },
-  {
-    "name": "远洋天著",
-    "price": "12500",
-    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
-    "map_url": "https://nc.newhouse.fang.com/loupan/2310199916.htm#detail_map",
-    "phone": [
-      "400-176-0760 ",
-      " 863562"
-    ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "恒茂未来都会",
@@ -68,20 +56,20 @@
       "400-176-0760 ",
       " 816697"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
-    "name": "赣电贵府",
-    "price": "8500",
+    "name": "远洋天著",
+    "price": "12500",
     "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
-    "map_url": "https://nc.newhouse.fang.com/loupan/2310200382.htm#detail_map",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310199916.htm#detail_map",
     "phone": [
       "400-176-0760 ",
-      " 715178"
+      " 863562"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "新旅明樾堂",
@@ -92,8 +80,20 @@
       "400-176-0760 ",
       " 715925"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
+  },
+  {
+    "name": "赣电贵府",
+    "price": "8500",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310200382.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 715178"
+    ],
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "保利半山温泉谷",
@@ -104,8 +104,8 @@
       "400-176-0760 ",
       " 660687"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "九湾华苑",
@@ -116,32 +116,8 @@
       "400-176-0760 ",
       " 617016"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
-  },
-  {
-    "name": "伴山蝶墅",
-    "price": "7300",
-    "img_url": "https://imgs.soufunimg.com/viewimage/house/2015_11/26/nanchang/1448532662968_000/168x112.jpg?t=1",
-    "map_url": "https://nc.newhouse.fang.com/loupan/2310937760.htm#detail_map",
-    "phone": [
-      "400-176-0760 ",
-      " 662139"
-    ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
-  },
-  {
-    "name": "龙森山居",
-    "price": "10000",
-    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
-    "map_url": "https://nc.newhouse.fang.com/loupan/2311186808.htm#detail_map",
-    "phone": [
-      "400-176-0760 ",
-      " 620620"
-    ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "佳源湾里印象",
@@ -152,20 +128,20 @@
       "400-176-0760 ",
       " 617964"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
-    "name": "磨盘山8号",
-    "price": "9300",
-    "img_url": "https://imgs.soufunimg.com/viewimage/house/2013_12/02/nanchang/1385955566039_000/168x112.jpg?t=1",
-    "map_url": "https://nc.newhouse.fang.com/loupan/2311093620.htm#detail_map",
+    "name": "伴山蝶墅",
+    "price": "7300",
+    "img_url": "https://imgs.soufunimg.com/viewimage/house/2015_11/26/nanchang/1448532662968_000/168x112.jpg?t=1",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310937760.htm#detail_map",
     "phone": [
       "400-176-0760 ",
-      " 644750"
+      " 662139"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "中煤凯旋湾",
@@ -176,8 +152,8 @@
       "400-176-0760 ",
       " 830086"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "香樟雅居",
@@ -188,8 +164,32 @@
       "400-176-0760 ",
       " 628034"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
+  },
+  {
+    "name": "磨盘山8号",
+    "price": "9300",
+    "img_url": "https://imgs.soufunimg.com/viewimage/house/2013_12/02/nanchang/1385955566039_000/168x112.jpg?t=1",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2311093620.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 644750"
+    ],
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
+  },
+  {
+    "name": "龙森山居",
+    "price": "10000",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2311186808.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 620620"
+    ],
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "加美四季花城",
@@ -200,8 +200,8 @@
       "400-176-0760 ",
       " 699205"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "嘉圆悦山居",
@@ -212,8 +212,8 @@
       "400-176-0760 ",
       " 700828"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   },
   {
     "name": "中华情优山美地",
@@ -224,7 +224,7 @@
       "400-176-0760 ",
       " 804921"
     ],
-    "latitude": "115.8583358",
-    "longitude": "28.6836542"
+    "latitude": "28.6836542",
+    "longitude": "115.8583358"
   }
 ]
