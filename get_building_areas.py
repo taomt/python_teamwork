@@ -7,6 +7,7 @@ import json
 import re
 import requests
 from lxml import etree
+from retry import retry
 
 
 def get_building_areas() -> None:
@@ -49,6 +50,9 @@ def get_building_area(url: str, area: str) -> None:
     # 遍历列表
     for li in li_list:
         # 通过 xpath 获取楼盘名称与价位
+        id_url: str = li.xpath('.//div[@class="nlcd_name"]/a/@href')[0]
+        reg = re.compile(r'loupan/(.*)\.htm')
+        id = reg.findall(id_url)[0]
         name: str = li.xpath('.//div[@class="nlcd_name"]/a/text()')[0].strip()
         prices: list = li.xpath('.//div[@class="nhouse_price"]/span/text()')
         img_url: str = 'https:' + li.xpath(
@@ -60,6 +64,7 @@ def get_building_area(url: str, area: str) -> None:
         if prices and prices[0] != '价格待定':
             price: str = prices[0]
             building = BuildingArea(
+                id,
                 name,
                 price,
                 img_url,
@@ -86,6 +91,7 @@ def get_building_area(url: str, area: str) -> None:
             get_building_area(Constance.base_url + next_page[-1], area)
 
 
+@retry()
 def get_position_by(map_url: str) -> tuple[str, str]:
     '''
     根据 `map_url` 获取经纬度，例：
@@ -139,6 +145,7 @@ class BuildingArea:
     '''
     BuildingArea 类
     '''
+    id: str
     name: str
     price: str
     img_url: str
@@ -149,6 +156,7 @@ class BuildingArea:
 
     def __init__(
         self,
+        id: str,
         name: str,
         price: str,
         img_url: str,
@@ -157,6 +165,7 @@ class BuildingArea:
         latitude: str,
         longitude: str,
     ) -> None:
+        self.id = id
         self.name = name
         self.price = price
         self.img_url = img_url
