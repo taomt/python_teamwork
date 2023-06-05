@@ -1,5 +1,5 @@
 <div align="center">
-  <img id="python_teamwork" width="96" alt="python_teamwork" src="https://raw.githubusercontent.com/Cierra-Runis/python_teamwork/master/repository_img/icon.svg">
+  <img id="python_teamwork" width="96" alt="python_teamwork" src="https://raw.githubusercontent.com/Cierra-Runis/python_teamwork/master/.github/icon.svg">
   <p>『 python_teamwork - python 大作业！』</p>
 </div>
 
