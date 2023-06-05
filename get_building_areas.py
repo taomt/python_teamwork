@@ -9,6 +9,9 @@ import requests
 from lxml import etree
 from retry import retry
 
+from kit import read_json_file_as_list
+from model_building_area import BuildingArea, BuildingAreaConstance
+
 
 def get_building_areas() -> None:
     '''
@@ -18,12 +21,15 @@ def get_building_areas() -> None:
     if not os.path.exists('./building_area'):
         os.mkdir('./building_area')
     # 遍历各地区
-    for area in Constance.areas:
+    for area in BuildingAreaConstance.areas:
         # 先写空文件
         json_path: str = f'./building_area/{area}.json'
         with open(json_path, 'w', encoding='utf-8') as f:
             f.write('[]')
-        get_building_area(f'{Constance.base_url}/house/s/{area}', area)
+        get_building_area(
+            f'{BuildingAreaConstance.base_url}/house/s/{area}',
+            area,
+        )
 
 
 def get_building_area(url: str, area: str) -> None:
@@ -35,7 +41,7 @@ def get_building_area(url: str, area: str) -> None:
     # 发送请求
     res_text = requests.get(
         url=url,
-        headers=Constance.headers,
+        headers=BuildingAreaConstance.headers,
         timeout=None,
     ).text
 
@@ -88,7 +94,8 @@ def get_building_area(url: str, area: str) -> None:
         next1: int = next_page[-1][-3:-1]
         last: int = last_page[-1][-3:-1]
         if last > next1:
-            get_building_area(Constance.base_url + next_page[-1], area)
+            get_building_area(BuildingAreaConstance.base_url + next_page[-1],
+                              area)
 
 
 @retry()
@@ -111,71 +118,6 @@ def get_position_by(map_url: str) -> tuple[str, str]:
     reg = re.compile(r'_vars.cityx = "(.*)";[\s\S]*_vars.cityy = "(.*)"')
     longitude, latitude = reg.findall(script.text)[0]
     return latitude, longitude
-
-
-def read_json_file_as_list(path) -> list[dict]:
-    '''
-    将 json 文件读取为 list
-    '''
-    lst: list[dict] = []
-    with open(path, 'r+', encoding='utf-8') as f:
-        lst = json.loads(f.read())
-    return lst
-
-
-class Constance:
-    '''
-    存放常数信息
-    '''
-    # headers 信息
-    headers: dict = {
-        'User-Agent':
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/113.0'
-    }
-    # 根 url
-    base_url: str = 'https://nc.newhouse.fang.com'
-    # 各地区
-    areas: list[str] = [
-        'honggutan', 'gaoxinkaifaqu', 'qingshanhu', 'xihu', 'nanchangxian',
-        'donghu', 'jingkaiqu', 'qingyunpu', 'wanli', 'xinjian', 'jinxian'
-    ]
-
-
-class BuildingArea:
-    '''
-    BuildingArea 类
-    '''
-    id: str
-    name: str
-    price: str
-    img_url: str
-    map_url: str
-    phone: list
-    latitude: str
-    longitude: str
-
-    def __init__(
-        self,
-        id: str,
-        name: str,
-        price: str,
-        img_url: str,
-        map_url: str,
-        phone: list,
-        latitude: str,
-        longitude: str,
-    ) -> None:
-        self.id = id
-        self.name = name
-        self.price = price
-        self.img_url = img_url
-        self.map_url = map_url
-        self.phone = phone
-        self.latitude = latitude
-        self.longitude = longitude
-
-    def __str__(self) -> str:
-        return self.__dict__.__str__()
 
 
 if __name__ == '__main__':

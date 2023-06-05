@@ -3,7 +3,7 @@ render.py
 '''
 
 from pyecharts import charts, options
-from get_building_areas import Constance, read_json_file_as_list
+from get_building_areas import BuildingAreaConstance, read_json_file_as_list
 
 if __name__ == '__main__':
 
@@ -23,7 +23,7 @@ if __name__ == '__main__':
     ))
     geo.add_schema(maptype='南昌')
 
-    for area in Constance.areas:
+    for area in BuildingAreaConstance.areas:
         data = read_json_file_as_list(f'./building_area/{area}.json')
         for item in data:
             name = item['name']

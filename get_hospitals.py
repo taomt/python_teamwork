@@ -8,6 +8,8 @@ import re
 import requests
 from lxml import etree
 
+from model_hospital import Hospital, HospitalConstance
+
 
 def get_hospitals() -> None:
     '''
@@ -22,8 +24,8 @@ def get_hospitals() -> None:
 
     # 发送请求
     res_text = requests.get(
-        url=Constance.base_url,
-        headers=Constance.headers,
+        url=HospitalConstance.base_url,
+        headers=HospitalConstance.headers,
         timeout=None,
     ).text
 
@@ -51,7 +53,11 @@ def get_position_by(url: str) -> tuple[str, str] | None:
     '''
     url = url.replace('.html', '/jieshao.html')
     print(f'> 正在获取 {url}')
-    res: str = requests.get(url, headers=Constance.headers, timeout=None).text
+    res: str = requests.get(
+        url,
+        headers=HospitalConstance.headers,
+        timeout=None,
+    ).text
     tree = etree.HTML(res)
     try:
         map_url = tree.xpath(
@@ -60,35 +66,6 @@ def get_position_by(url: str) -> tuple[str, str] | None:
         return None
     reg = re.compile(r'location=(.*),(.*?)&')
     return reg.findall(map_url)[0]
-
-
-class Constance:
-    '''
-    存放常数信息
-    '''
-    # headers 信息
-    headers: dict = {
-        'User-Agent':
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/113.0'
-    }
-    # 根 url
-    base_url: str = 'https://www.haodf.com/hospital/list-3601.html'
-
-
-class Hospital:
-    name: str
-    latitude: str
-    longitude: str
-
-    def __init__(
-        self,
-        name: str,
-        latitude: str,
-        longitude: str,
-    ) -> None:
-        self.name = name
-        self.latitude = latitude
-        self.longitude = longitude
 
 
 if __name__ == '__main__':
