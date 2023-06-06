@@ -22,5 +22,17 @@
     "wanli",
     "xihu",
     "xinjian"
-  ]
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "LICENSE": true,
+    ".vscode": true,
+    ".github": true
+  },
+  "explorerExclude.backup": {}
 }

@@ -3,7 +3,6 @@ hospital.py
 '''
 
 import json
-import os
 import re
 import requests
 from lxml import etree
@@ -15,12 +14,8 @@ def get_hospitals() -> None:
     '''
     获取南昌市所有医院的信息并保存为 json 文件
     '''
-    # 保证文件夹存在
-    if not os.path.exists('./hospital'):
-        os.mkdir('./hospital')
-    json_path: str = './hospital/hospital.json'
-    with open(json_path, 'w', encoding='utf-8') as f:
-        f.write('[]')
+
+    json_path: str = './data/hospitals.json'
 
     # 发送请求
     res_text = requests.get(

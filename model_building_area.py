@@ -3,7 +3,7 @@ model_building_area.py
 存储 get_building_areas.py 相关类与方法
 '''
 
-from kit import read_json_file_as_list
+from utils import read_json_file_as_list
 
 
 class BuildingArea:
@@ -18,6 +18,7 @@ class BuildingArea:
     phone: list
     latitude: str
     longitude: str
+    history_price: list[dict]
 
     def __init__(
         self,
@@ -29,6 +30,7 @@ class BuildingArea:
         phone: list,
         latitude: str,
         longitude: str,
+        history_price: list[dict],
     ) -> None:
         self.id = id
         self.name = name
@@ -38,6 +40,7 @@ class BuildingArea:
         self.phone = phone
         self.latitude = latitude
         self.longitude = longitude
+        self.history_price = history_price
 
     @staticmethod
     def from_json(dct: dict):
@@ -53,6 +56,7 @@ class BuildingArea:
             dct['phone'],
             dct['latitude'],
             dct['longitude'],
+            dct['history_price'],
         )
 
     def __str__(self) -> str:
@@ -75,6 +79,25 @@ class BuildingAreaConstance:
         'honggutan', 'gaoxinkaifaqu', 'qingshanhu', 'xihu', 'nanchangxian',
         'donghu', 'jingkaiqu', 'qingyunpu', 'wanli', 'xinjian', 'jinxian'
     ]
+
+
+class HistoryPrice:
+    '''
+    历史价格
+    '''
+    year: str
+    month: str
+    price: str
+
+    def __init__(
+        self,
+        year: str,
+        month: str,
+        price: str,
+    ) -> None:
+        self.year = year
+        self.month = month
+        self.price = price
 
 
 def read_as_building_areas(path: str) -> list[BuildingArea]:

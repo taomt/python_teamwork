@@ -32,3 +32,6 @@ class School:
         self.name = name
         self.longitude = longitude
         self.latitude = latitude
+
+    def __str__(self) -> str:
+        return self.__dict__.__str__()

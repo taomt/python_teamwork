@@ -9,8 +9,8 @@ import requests
 from lxml import etree
 from retry import retry
 
-from kit import read_json_file_as_list
-from model_building_area import BuildingArea, BuildingAreaConstance
+from utils import read_json_file_as_list
+from model_building_area import BuildingArea, BuildingAreaConstance, HistoryPrice
 
 
 def get_building_areas() -> None:
@@ -18,12 +18,12 @@ def get_building_areas() -> None:
     获取所有地区的房市信息并保存为 json 文件
     '''
     # 保证文件夹存在
-    if not os.path.exists('./building_area'):
-        os.mkdir('./building_area')
+    if not os.path.exists('./data/building_area'):
+        os.mkdir('./data/building_area')
     # 遍历各地区
     for area in BuildingAreaConstance.areas:
         # 先写空文件
-        json_path: str = f'./building_area/{area}.json'
+        json_path: str = f'./data/building_area/{area}.json'
         with open(json_path, 'w', encoding='utf-8') as f:
             f.write('[]')
         get_building_area(
@@ -37,6 +37,7 @@ def get_building_area(url: str, area: str) -> None:
     通过 url 和 area 获取房市信息
     注意一个 area 可以对应多个 url
     '''
+    print(f'> 正在获取 {area} 地区 {url} 的数据')
 
     # 发送请求
     res_text = requests.get(
@@ -50,7 +51,7 @@ def get_building_area(url: str, area: str) -> None:
     li_list: list = tree.xpath('//div[@id="newhouse_loupan_list"]/ul/li')
 
     # 读取原先的 json 文件
-    json_path: str = f'./building_area/{area}.json'
+    json_path: str = f'./data/building_area/{area}.json'
     buildings: list[dict] = read_json_file_as_list(json_path)
 
     # 遍历列表
@@ -65,7 +66,10 @@ def get_building_area(url: str, area: str) -> None:
             './/div[@class="nlc_img"]//img[1]/@src')[0]
         map_url: str = li.xpath('.//div[@class="address"]/a/@href')[0]
         phone: list = li.xpath('.//div[@class="tel"]/p/text()')
-        lat, lon = get_position_by(map_url)
+        lat, lon = get_position_by(id, map_url)
+        history_prices: list[dict] = [
+            history_price.__dict__ for history_price in get_history_prices(id)
+        ]
         # 数据合理则添加至列表
         if prices and prices[0] != '价格待定':
             price: str = prices[0]
@@ -78,11 +82,12 @@ def get_building_area(url: str, area: str) -> None:
                 phone,
                 lat,
                 lon,
+                history_prices,
             )
             buildings.append(building.__dict__)
 
     # 写入文件
-    with open(json_path, 'w', encoding='utf-8') as f:
+    with open(json_path, 'w+', encoding='utf-8') as f:
         f.write(json.dumps(buildings, indent=2, ensure_ascii=False))
 
     print(f'> 已将 {url} 的数据写入 {json_path}')
@@ -94,12 +99,51 @@ def get_building_area(url: str, area: str) -> None:
         next1: int = next_page[-1][-3:-1]
         last: int = last_page[-1][-3:-1]
         if last > next1:
-            get_building_area(BuildingAreaConstance.base_url + next_page[-1],
-                              area)
+            get_building_area(
+                BuildingAreaConstance.base_url + next_page[-1],
+                area,
+            )
+
+
+def get_history_prices(id: str) -> list[HistoryPrice]:
+    '''
+    根据 `id` 获取历史价格
+    ``` python
+    print(id) # 2310200644
+    get_history_price(building_area)
+    ```
+    '''
+    print(f'> 正在获取 {id} 的历史价格')
+
+    res = requests.get(
+        url=f'{BuildingAreaConstance.base_url}/loupan/{id}/fangjia.htm',
+        headers=BuildingAreaConstance.headers,
+        timeout=None,
+    )
+
+    tree = etree.HTML(res.text)
+
+    li_list = tree.xpath("//div[@class='jglist']/ul/li")
+
+    result: list[HistoryPrice] = []
+
+    for li in li_list:
+
+        time = li.xpath("./span[1]/text()")[0]
+        temp = time.split('-')
+
+        result.append(
+            HistoryPrice(
+                year=temp[0],
+                month=temp[1],
+                price=li.xpath("./span[2]/text()")[0].split("元")[0],
+            ))
+
+    return result
 
 
 @retry()
-def get_position_by(map_url: str) -> tuple[str, str]:
+def get_position_by(id: str, map_url: str) -> tuple[str, str]:
     '''
     根据 `map_url` 获取经纬度，例：
     ``` python
@@ -107,7 +151,7 @@ def get_position_by(map_url: str) -> tuple[str, str]:
     print(lat, lon) # 28.6836542 115.8583358
     ```
     '''
-    print(f'> 正在获取 {map_url}')
+    print(f'> 正在获取 {id} 的经纬度')
     res: str = requests.get(map_url, timeout=None).text
     iframe = etree.HTML(res).xpath('//*[@id="iframe_map"]')
     if not iframe:
