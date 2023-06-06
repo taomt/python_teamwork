@@ -105,6 +105,7 @@ def get_building_area(url: str, area: str) -> None:
             )
 
 
+@retry()
 def get_history_prices(id: str) -> list[HistoryPrice]:
     '''
     根据 `id` 获取历史价格
