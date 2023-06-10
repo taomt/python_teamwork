@@ -11,11 +11,15 @@ from model_school import School, SchoolConstance
 
 def get_pages() -> list[School]:
     '''
-    获取 4 页的内容
+    获取多页的内容
     '''
     result: list[School] = []
-    for i in range(4):
-        result.extend(get_page(i))
+    index = 0
+    pages = get_page(index)
+    while len(pages) != 0:
+        result.extend(pages)
+        index += 1
+        pages = get_page(index)
     return result
 
 
@@ -26,7 +30,7 @@ def get_page(page: int) -> list[School]:
     sleep(1)
     print(f'> 正在获取第 {page} 页的内容')
 
-    ak = 'NWqi2iGuW9mpd5CsOBA0hV3dsDq0f6GC'
+    ak = 'RcFMxuBRNQ8m7PO7PB2DuMxeibaRqojR'
     params = {
         "query": "学校",
         "tag": "教育培训",

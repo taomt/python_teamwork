@@ -84,8 +84,8 @@ class RenderPlot:
         南昌各地房价对比条形图
         '''
         bar = Bar(init_opts=opts.InitOpts(
-            width="1000px",
-            height="600px",
+            width="100%",
+            height="978px",
             theme=ThemeType.ESSOS  # 主题
         ))
 
@@ -113,7 +113,7 @@ class RenderPlot:
         '''
         南昌各地房价对比折线图
         '''
-        line = Line()
+        line = Line(init_opts=opts.InitOpts(width='100%', height='978px'))
         line.add_xaxis(RenderPlotConstance.areas_cn)
         line.add_yaxis("平均房价", y_axis=self.avg_)
         line.add_yaxis("最高房价", y_axis=self.max_)
@@ -143,7 +143,7 @@ class RenderPlot:
         南昌各地拥有楼盘占比
         '''
         building_cnts = [int(value) for value in self.building_cnts]
-        pie = Pie(init_opts=opts.InitOpts(width="800px", height="500px"))
+        pie = Pie(init_opts=opts.InitOpts(width="100%", height="978px"))
         pie.add("各地楼盘个数占比", [
             list(x) for x in zip(RenderPlotConstance.areas_cn, building_cnts)
         ])

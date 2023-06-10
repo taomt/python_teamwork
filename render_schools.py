@@ -4,9 +4,28 @@ render_schools.py
 
 import math
 from pyecharts import charts, options as opts
-from model_building_area import BuildingArea, BuildingAreaConstance, read_as_building_areas
+from model_building_area import BuildingArea, read_as_building_areas
 from model_school import School
 from utils import get_distance_hav, read_json_file_as_list
+
+
+class RenderSchoolsConstance:
+    '''
+    存放常数信息
+    '''
+    area_dict: dict = {
+        'donghu': '东湖',
+        'gaoxinkaifaqu': '高新开发区',
+        'honggutan': '红谷滩',
+        'jingkaiqu': '经开区',
+        'jinxian': '进贤',
+        'nanchangxian': '南昌县',
+        'qingshanhu': '青山湖',
+        'qingyunpu': '青云谱',
+        'wanli': '湾里',
+        'xihu': '西湖',
+        'xinjian': '新建',
+    }
 
 
 def get_value_of(building_area: BuildingArea, schools: list[School]) -> float:
@@ -21,45 +40,48 @@ def get_value_of(building_area: BuildingArea, schools: list[School]) -> float:
             school.latitude,
             school.longitude,
         )
-        # 假定影响程度与距离符合正态分布
-        v = math.exp(-distance**2 / 10)
-        value += v
+        value += math.exp(-distance**2 / 80)
     print(f'{building_area.name}的价格为 {building_area.price} 权值为 {value:.2f}')
-    return value
+    return round(value, 2)
 
 
 if __name__ == '__main__':
     data: list[list[float]] = []
-    for area in BuildingAreaConstance.areas:
-        for building_area in read_as_building_areas(
-                f'./data/building_area/{area}.json'):
-            data.append([
-                building_area.price,
-                get_value_of(
-                    building_area,
-                    [
-                        School.from_json(dct) for dct in
-                        read_json_file_as_list('./data/schools.json')
-                    ],
-                ),
-            ])
+    scatter = charts.Scatter(init_opts=opts.InitOpts(
+        width='100%',
+        height='978px',
+        page_title='南昌各地房价与学校距离加权图',
+    ))
+    for area, area_cn in RenderSchoolsConstance.area_dict.items():
+        building_areas = read_as_building_areas(
+            f'./data/building_area/{area}.json')
+        scatter.add_xaxis(xaxis_data=[
+            building_area.price for building_area in building_areas
+        ])
+        y_data = []
+        for building_area in building_areas:
+            y_data.append(
+                get_value_of(building_area, [
+                    School.from_json(dct)
+                    for dct in read_json_file_as_list('./data/schools.json')
+                ]))
+        scatter.add_yaxis(
+            series_name=area_cn,
+            y_axis=y_data,
+            symbol_size=10,
+            label_opts=opts.LabelOpts(is_show=False),
+        )
 
-    data.sort(key=lambda x: x[0])
-    x_data = [d[0] for d in data]
-    y_data = [d[1] for d in data]
-
-    (charts.Scatter().add_xaxis(xaxis_data=x_data).add_yaxis(
-        series_name="",
-        y_axis=y_data,
-        symbol_size=20,
-        label_opts=opts.LabelOpts(is_show=False),
-    ).set_series_opts().set_global_opts(
+    scatter.set_series_opts()
+    scatter.set_global_opts(
+        title_opts=opts.TitleOpts(title='南昌各地房价与学校距离加权图'),
         xaxis_opts=opts.AxisOpts(
-            type_="value", splitline_opts=opts.SplitLineOpts(is_show=True)),
-        yaxis_opts=opts.AxisOpts(
             type_="value",
-            axistick_opts=opts.AxisTickOpts(is_show=True),
             splitline_opts=opts.SplitLineOpts(is_show=True),
         ),
-        tooltip_opts=opts.TooltipOpts(is_show=False),
-    ).render("./output/basic_scatter_chart.html"))
+        yaxis_opts=opts.AxisOpts(
+            type_="value",
+            splitline_opts=opts.SplitLineOpts(is_show=True),
+        ),
+    )
+    scatter.render("./output/南昌各地房价与学校距离加权图.html")
