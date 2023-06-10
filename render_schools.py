@@ -4,6 +4,7 @@ render_schools.py
 
 import math
 from pyecharts import charts, options as opts
+from pyecharts.globals import ThemeType
 from model_building_area import BuildingArea, read_as_building_areas
 from model_school import School
 from utils import get_distance_hav, read_json_file_as_list
@@ -51,6 +52,7 @@ if __name__ == '__main__':
         width='100%',
         height='978px',
         page_title='南昌各地房价与学校距离加权图',
+        theme=ThemeType.ESSOS,
     ))
     for area, area_cn in RenderSchoolsConstance.area_dict.items():
         building_areas = read_as_building_areas(
