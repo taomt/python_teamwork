@@ -9,8 +9,8 @@ from math import asin, cos, fabs, radians, sin, sqrt
 
 def read_json_file_as_list(path) -> list[dict]:
     '''
-  将 json 文件读取为 list
-  '''
+    将 json 文件读取为 list
+    '''
     lst: list[dict] = []
     with open(path, 'r+', encoding='utf-8') as f:
         lst = json.loads(f.read())
