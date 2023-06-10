@@ -4,6 +4,7 @@ render_schools.py
 
 import math
 from pyecharts import charts, options as opts
+from pyecharts.commons.utils import JsCode
 from pyecharts.globals import ThemeType
 from model_building_area import BuildingArea, read_as_building_areas
 from model_school import School
@@ -62,11 +63,13 @@ if __name__ == '__main__':
         ])
         y_data = []
         for building_area in building_areas:
-            y_data.append(
+            y_data.append([
                 get_value_of(building_area, [
                     School.from_json(dct)
                     for dct in read_json_file_as_list('./data/schools.json')
-                ]))
+                ]),
+                building_area.name,
+            ])
         scatter.add_yaxis(
             series_name=area_cn,
             y_axis=y_data,
@@ -85,5 +88,8 @@ if __name__ == '__main__':
             type_="value",
             splitline_opts=opts.SplitLineOpts(is_show=True),
         ),
+        tooltip_opts=opts.TooltipOpts(formatter=JsCode(
+            "function (params) {return params.value[2] + ' : ' + params.value[1];}"
+        )),
     )
     scatter.render("./output/南昌各地房价与学校距离加权图.html")
