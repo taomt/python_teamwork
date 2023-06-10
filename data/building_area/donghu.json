@@ -9,8 +9,8 @@
       "400-176-0760 ",
       " 840598"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.72376251220703",
+    "longitude": "115.93524932861328",
     "history_price": [
       {
         "year": "2023",
@@ -74,8 +74,8 @@
       "400-176-0760 ",
       " 855080"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.689790725708008",
+    "longitude": "115.91922760009766",
     "history_price": [
       {
         "year": "2021",
@@ -139,8 +139,8 @@
       "400-176-0760 ",
       " 624529"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.721477508544922",
+    "longitude": "115.93578338623047",
     "history_price": [
       {
         "year": "2023",
@@ -195,20 +195,6 @@
     ]
   },
   {
-    "id": "2310202912",
-    "name": "紫金城壹号",
-    "price": "22645",
-    "img_url": "https:https://cihcdn.soufunimg.com/apc/viewImg/a09872656dc244cd91801b40ca4f169f/750",
-    "map_url": "https://nc.newhouse.fang.com/loupan/2310202912.htm#detail_map",
-    "phone": [
-      "400-176-0760 ",
-      " 641723"
-    ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
-    "history_price": []
-  },
-  {
     "id": "2310200490",
     "name": "南昌中骏世界城",
     "price": "18000",
@@ -218,8 +204,8 @@
       "400-176-0760 ",
       " 732360"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.714492797851562",
+    "longitude": "115.93757629394531",
     "history_price": [
       {
         "year": "2023",
@@ -274,6 +260,20 @@
     ]
   },
   {
+    "id": "2310202912",
+    "name": "紫金城壹号",
+    "price": "22645",
+    "img_url": "https:https://cihcdn.soufunimg.com/apc/viewImg/a09872656dc244cd91801b40ca4f169f/750",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310202912.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 641723"
+    ],
+    "latitude": "28.70694351196289",
+    "longitude": "115.9155502319336",
+    "history_price": []
+  },
+  {
     "id": "2310199870",
     "name": "中金中心·阅璟台",
     "price": "18500",
@@ -283,8 +283,8 @@
       "400-176-0760 ",
       " 859806"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.698850631713867",
+    "longitude": "115.91219329833984",
     "history_price": [
       {
         "year": "2021",
@@ -348,8 +348,8 @@
       "400-176-0760 ",
       " 707459"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.705970764160156",
+    "longitude": "115.91339111328125",
     "history_price": [
       {
         "year": "2021",
@@ -413,8 +413,8 @@
       "400-176-0760 ",
       " 727883"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.707422256469727",
+    "longitude": "115.9095687866211",
     "history_price": [
       {
         "year": "2022",

@@ -28,7 +28,7 @@ def get_page(page: int) -> list[School]:
 
     ak = 'NWqi2iGuW9mpd5CsOBA0hV3dsDq0f6GC'
     params = {
-        "query": "高中",
+        "query": "学校",
         "tag": "教育培训",
         "region": "南昌",
         "output": "json",

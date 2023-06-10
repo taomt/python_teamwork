@@ -9,8 +9,8 @@
       "400-176-0760 ",
       " 839829"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.694904327392578",
+    "longitude": "115.74549102783203",
     "history_price": [
       {
         "year": "2022",
@@ -74,8 +74,8 @@
       "400-176-0760 ",
       " 883743"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.713830947875977",
+    "longitude": "115.76301574707031",
     "history_price": [
       {
         "year": "2022",
@@ -139,8 +139,8 @@
       "400-176-0760 ",
       " 841575"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.690357208251953",
+    "longitude": "115.74951171875",
     "history_price": [
       {
         "year": "2022",
@@ -204,8 +204,8 @@
       "400-176-0760 ",
       " 606238"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.688875198364258",
+    "longitude": "115.74650573730469",
     "history_price": [
       {
         "year": "2023",
@@ -269,8 +269,8 @@
       "400-176-0760 ",
       " 863562"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.701162338256836",
+    "longitude": "115.7264404296875",
     "history_price": [
       {
         "year": "2022",
@@ -334,8 +334,8 @@
       "400-176-0760 ",
       " 816697"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.69528579711914",
+    "longitude": "115.74301147460938",
     "history_price": [
       {
         "year": "2022",
@@ -399,8 +399,8 @@
       "400-176-0760 ",
       " 715925"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.707351684570312",
+    "longitude": "115.74210357666016",
     "history_price": [
       {
         "year": "2022",
@@ -451,71 +451,6 @@
         "year": "2021",
         "month": "09",
         "price": "11000"
-      }
-    ]
-  },
-  {
-    "id": "2310200382",
-    "name": "赣电贵府",
-    "price": "8500",
-    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
-    "map_url": "https://nc.newhouse.fang.com/loupan/2310200382.htm#detail_map",
-    "phone": [
-      "400-176-0760 ",
-      " 715178"
-    ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
-    "history_price": [
-      {
-        "year": "2022",
-        "month": "05",
-        "price": "8500"
-      },
-      {
-        "year": "2021",
-        "month": "11",
-        "price": "9300"
-      },
-      {
-        "year": "2021",
-        "month": "11",
-        "price": "9300"
-      },
-      {
-        "year": "2021",
-        "month": "10",
-        "price": "9300"
-      },
-      {
-        "year": "2021",
-        "month": "10",
-        "price": "9300"
-      },
-      {
-        "year": "2021",
-        "month": "09",
-        "price": "9300"
-      },
-      {
-        "year": "2021",
-        "month": "09",
-        "price": "9300"
-      },
-      {
-        "year": "2021",
-        "month": "08",
-        "price": "9300"
-      },
-      {
-        "year": "2021",
-        "month": "07",
-        "price": "9500"
-      },
-      {
-        "year": "2021",
-        "month": "04",
-        "price": "9200"
       }
     ]
   },
@@ -529,8 +464,8 @@
       "400-176-0760 ",
       " 660687"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.70957374572754",
+    "longitude": "115.7621841430664",
     "history_price": [
       {
         "year": "2022",
@@ -585,17 +520,17 @@
     ]
   },
   {
-    "id": "2310200620",
-    "name": "佳源湾里印象",
+    "id": "2310200382",
+    "name": "赣电贵府",
     "price": "8500",
     "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
-    "map_url": "https://nc.newhouse.fang.com/loupan/2310200620.htm#detail_map",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310200382.htm#detail_map",
     "phone": [
       "400-176-0760 ",
-      " 617964"
+      " 715178"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.699138641357422",
+    "longitude": "115.75519561767578",
     "history_price": [
       {
         "year": "2022",
@@ -603,49 +538,49 @@
         "price": "8500"
       },
       {
-        "year": "2022",
-        "month": "01",
-        "price": "8500"
-      },
-      {
         "year": "2021",
-        "month": "12",
-        "price": "8500"
+        "month": "11",
+        "price": "9300"
       },
       {
         "year": "2021",
         "month": "11",
-        "price": "8500"
-      },
-      {
-        "year": "2021",
-        "month": "11",
-        "price": "8500"
+        "price": "9300"
       },
       {
         "year": "2021",
         "month": "10",
+        "price": "9300"
+      },
+      {
+        "year": "2021",
+        "month": "10",
+        "price": "9300"
+      },
+      {
+        "year": "2021",
+        "month": "09",
+        "price": "9300"
+      },
+      {
+        "year": "2021",
+        "month": "09",
+        "price": "9300"
+      },
+      {
+        "year": "2021",
+        "month": "08",
+        "price": "9300"
+      },
+      {
+        "year": "2021",
+        "month": "07",
         "price": "9500"
       },
       {
         "year": "2021",
-        "month": "10",
-        "price": "8500"
-      },
-      {
-        "year": "2021",
-        "month": "09",
-        "price": "--"
-      },
-      {
-        "year": "2021",
-        "month": "09",
-        "price": "11000"
-      },
-      {
-        "year": "2021",
-        "month": "09",
-        "price": "11000"
+        "month": "04",
+        "price": "9200"
       }
     ]
   },
@@ -659,8 +594,8 @@
       "400-176-0760 ",
       " 617016"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.706270217895508",
+    "longitude": "115.73039245605469",
     "history_price": [
       {
         "year": "2022",
@@ -715,6 +650,116 @@
     ]
   },
   {
+    "id": "2310200620",
+    "name": "佳源湾里印象",
+    "price": "8500",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310200620.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 617964"
+    ],
+    "latitude": "28.708173751831055",
+    "longitude": "115.74633026123047",
+    "history_price": [
+      {
+        "year": "2022",
+        "month": "05",
+        "price": "8500"
+      },
+      {
+        "year": "2022",
+        "month": "01",
+        "price": "8500"
+      },
+      {
+        "year": "2021",
+        "month": "12",
+        "price": "8500"
+      },
+      {
+        "year": "2021",
+        "month": "11",
+        "price": "8500"
+      },
+      {
+        "year": "2021",
+        "month": "11",
+        "price": "8500"
+      },
+      {
+        "year": "2021",
+        "month": "10",
+        "price": "9500"
+      },
+      {
+        "year": "2021",
+        "month": "10",
+        "price": "8500"
+      },
+      {
+        "year": "2021",
+        "month": "09",
+        "price": "--"
+      },
+      {
+        "year": "2021",
+        "month": "09",
+        "price": "11000"
+      },
+      {
+        "year": "2021",
+        "month": "09",
+        "price": "11000"
+      }
+    ]
+  },
+  {
+    "id": "2310202028",
+    "name": "香樟雅居",
+    "price": "9500",
+    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
+    "map_url": "https://nc.newhouse.fang.com/loupan/2310202028.htm#detail_map",
+    "phone": [
+      "400-176-0760 ",
+      " 628034"
+    ],
+    "latitude": "28.722732543945312",
+    "longitude": "115.74107360839844",
+    "history_price": [
+      {
+        "year": "2022",
+        "month": "05",
+        "price": "9500"
+      },
+      {
+        "year": "2022",
+        "month": "01",
+        "price": "--"
+      },
+      {
+        "year": "2021",
+        "month": "12",
+        "price": "9500"
+      },
+      {
+        "year": "2021",
+        "month": "11",
+        "price": "9500"
+      },
+      {
+        "year": "2021",
+        "month": "11",
+        "price": "--"
+      },
+      {
+        "year": "2021",
+        "month": "10",
+        "price": "9700"
+      }
+    ]
+  },
+  {
     "id": "2311273066",
     "name": "中煤凯旋湾",
     "price": "7700",
@@ -724,8 +769,8 @@
       "400-176-0760 ",
       " 830086"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.707307815551758",
+    "longitude": "115.73405456542969",
     "history_price": [
       {
         "year": "2022",
@@ -789,8 +834,8 @@
       "400-176-0760 ",
       " 644750"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.703670501708984",
+    "longitude": "115.7394790649414",
     "history_price": [
       {
         "year": "2020",
@@ -854,8 +899,8 @@
       "400-176-0760 ",
       " 662139"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.704816818237305",
+    "longitude": "115.75188446044922",
     "history_price": [
       {
         "year": "2022",
@@ -919,8 +964,8 @@
       "400-176-0760 ",
       " 620620"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.702083587646484",
+    "longitude": "115.74215698242188",
     "history_price": [
       {
         "year": "2022",
@@ -975,51 +1020,6 @@
     ]
   },
   {
-    "id": "2310202028",
-    "name": "香樟雅居",
-    "price": "9500",
-    "img_url": "https://js.soufunimg.com/homepage/new/fang905bj/newsV3/images/icon041002.png",
-    "map_url": "https://nc.newhouse.fang.com/loupan/2310202028.htm#detail_map",
-    "phone": [
-      "400-176-0760 ",
-      " 628034"
-    ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
-    "history_price": [
-      {
-        "year": "2022",
-        "month": "05",
-        "price": "9500"
-      },
-      {
-        "year": "2022",
-        "month": "01",
-        "price": "--"
-      },
-      {
-        "year": "2021",
-        "month": "12",
-        "price": "9500"
-      },
-      {
-        "year": "2021",
-        "month": "11",
-        "price": "9500"
-      },
-      {
-        "year": "2021",
-        "month": "11",
-        "price": "--"
-      },
-      {
-        "year": "2021",
-        "month": "10",
-        "price": "9700"
-      }
-    ]
-  },
-  {
     "id": "2311131284",
     "name": "加美四季花城",
     "price": "10000",
@@ -1029,8 +1029,8 @@
       "400-176-0760 ",
       " 699205"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.708765029907227",
+    "longitude": "115.75100708007812",
     "history_price": [
       {
         "year": "2022",
@@ -1094,8 +1094,8 @@
       "400-176-0760 ",
       " 700828"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.69236946105957",
+    "longitude": "115.7359390258789",
     "history_price": [
       {
         "year": "2022",
@@ -1159,8 +1159,8 @@
       "400-176-0760 ",
       " 804921"
     ],
-    "latitude": "28.6836542",
-    "longitude": "115.8583358",
+    "latitude": "28.73334503173828",
+    "longitude": "115.74445343017578",
     "history_price": [
       {
         "year": "2020",

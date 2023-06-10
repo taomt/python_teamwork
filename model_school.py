@@ -33,5 +33,16 @@ class School:
         self.longitude = longitude
         self.latitude = latitude
 
+    @staticmethod
+    def from_json(dct: dict):
+        '''
+        静态函数，将 `dct` 的 `json` 数据类型转为 School
+        '''
+        return School(
+            name=dct['name'],
+            longitude=dct['longitude'],
+            latitude=dct['latitude'],
+        )
+
     def __str__(self) -> str:
         return self.__dict__.__str__()
