@@ -33,7 +33,8 @@
     "**/Thumbs.db": true,
     "LICENSE": true,
     ".vscode": true,
-    ".github": true
+    ".github": true,
+    "__pycache__": true
   },
   "explorerExclude.backup": {}
 }

@@ -146,11 +146,11 @@ class RenderPlot:
 
     def draw_pie(self) -> None:
         '''
-        南昌各地拥有楼盘占比
+        南昌各地拥有楼盘占比图
         '''
         building_cnts = [int(value) for value in self.building_cnts]
         pie = Pie(init_opts=opts.InitOpts(
-            page_title='南昌各地拥有楼盘占比',
+            page_title='南昌各地拥有楼盘占比图',
             width="100%",
             height="978px",
             theme=ThemeType.ESSOS,
@@ -160,10 +160,10 @@ class RenderPlot:
         ])
         pie.set_series_opts(label_opts=opts.LabelOpts(formatter="{b}:{c}"))
         pie.set_global_opts(title_opts=opts.TitleOpts(
-            title="南昌各地拥有楼盘占比",
+            title="南昌各地拥有楼盘占比图",
             pos_top="30px",
         ))
-        pie.render('./output/南昌各地拥有楼盘占比.html')
+        pie.render('./output/南昌各地拥有楼盘占比图.html')
 
 
 if __name__ == '__main__':
