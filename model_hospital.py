@@ -34,3 +34,14 @@ class Hospital:
         self.name = name
         self.latitude = latitude
         self.longitude = longitude
+
+    @staticmethod
+    def from_json(dct: dict):
+        '''
+        静态函数，将 `dct` 的 `json` 数据类型转为 School
+        '''
+        return Hospital(
+            name=dct['name'],
+            longitude=dct['longitude'],
+            latitude=dct['latitude'],
+        )
