@@ -111,7 +111,7 @@ def get_history_prices(id: str) -> list[HistoryPrice]:
     根据 `id` 获取历史价格
     ``` python
     print(id) # 2310200644
-    get_history_price(building_area)
+    get_history_price(id)
     ```
     '''
     print(f'> 正在获取 {id} 的历史价格')
