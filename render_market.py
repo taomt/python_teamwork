@@ -32,7 +32,7 @@ class RenderMarketConstance:
 
 def get_value_of(building_area: BuildingArea, markets: list[Market]) -> float:
     '''
-    传入 building_area 和 markets 得到一个反映学校对该 building_area 价格影响程度的权值
+    传入 building_area 和 markets 得到一个反映商城对该 building_area 价格影响程度的权值
     '''
     value: float = 0
     for market in markets:
@@ -52,7 +52,7 @@ if __name__ == '__main__':
     scatter = charts.Scatter(init_opts=opts.InitOpts(
         width='100%',
         height='978px',
-        page_title='南昌各地房价与市场距离加权图',
+        page_title='南昌各地房价与商场距离加权图',
         theme=ThemeType.ESSOS,
     ))
     for area, area_cn in RenderMarketConstance.area_dict.items():
@@ -79,7 +79,7 @@ if __name__ == '__main__':
 
     scatter.set_series_opts()
     scatter.set_global_opts(
-        title_opts=opts.TitleOpts(title='南昌各地房价与市场距离加权图'),
+        title_opts=opts.TitleOpts(title='南昌各地房价与商场距离加权图'),
         xaxis_opts=opts.AxisOpts(
             type_="value",
             splitline_opts=opts.SplitLineOpts(is_show=True),
@@ -92,4 +92,4 @@ if __name__ == '__main__':
             "function (params) {return params.value[2] + ' : ' + params.value[1];}"
         )),
     )
-    scatter.render("./output/南昌各地房价与市场距离加权图.html")
+    scatter.render("./output/南昌各地房价与商场距离加权图.html")
