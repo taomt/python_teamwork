@@ -1,10 +1,9 @@
 '''
-model_school.py
-存储 get_schools.py 相关类与方法
+model_market.py
 '''
 
 
-class SchoolConstance:
+class MarketConstance:
     '''
     存放常数信息
     '''
