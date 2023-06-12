@@ -4,7 +4,7 @@ model_school.py
 '''
 
 
-class MarketConstance:
+class SchoolConstance:
     '''
     存放常数信息
     '''
