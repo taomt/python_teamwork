@@ -4,7 +4,7 @@ model_school.py
 '''
 
 
-class MarketConstance:
+class SchoolConstance:
     '''
     存放常数信息
     '''
@@ -15,9 +15,9 @@ class MarketConstance:
     base_url: str = 'https://api.map.baidu.com'
 
 
-class School:
+class Market:
     '''
-    School 类
+    Market 类
     '''
     name: str
     longitude: str
@@ -36,9 +36,9 @@ class School:
     @staticmethod
     def from_json(dct: dict):
         '''
-        静态函数，将 `dct` 的 `json` 数据类型转为 School
+        静态函数，将 `dct` 的 `json` 数据类型转为 Market
         '''
-        return School(
+        return Market(
             name=dct['name'],
             longitude=dct['longitude'],
             latitude=dct['latitude'],
